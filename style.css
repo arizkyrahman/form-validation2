@@ -1,0 +1,272 @@
+/* default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* content section rules */
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #f2796e;
+  width: 55%;
+  min-height: 100vh;
+  padding: 10px 20px;
+}
+
+.image {
+  background-image: url("assets/fontawesome/images/illustration.svg");
+  background-repeat: no-repeat;
+  height: 65%;
+  background-size: contain;
+  background-position: center;
+}
+
+.text {
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* form section rules */
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 50px;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.question span:hover {
+  text-decoration: underline;
+}
+
+.form-control {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 2em;
+  position: relative;
+}
+
+form div input {
+  width: 100%;
+  border-radius: 8px;
+  height: 40px;
+  outline: none;
+  border: 2px solid #c4c4c4;
+  padding: 0 30px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: inherit;
+  font-size: 12px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+form div {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+form input:focus {
+  border-color: black;
+}
+
+.form-control.success input {
+  border-color: #2ecc71;
+}
+
+.form-control.wrong input {
+  border-color: red;
+}
+
+/* social section */
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.btn-1:hover {
+  cursor: pointer;
+  transform: scale(102%);
+}
+
+.btn-2:hover {
+  cursor: pointer;
+  transform: scale(102%);
+}
+
+.btn-1,
+.btn-2 {
+  padding: 10px 7px;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #c4c4c4;
+  border-radius: 1em;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.1s ease;
+}
+
+.btn-2 {
+  background-color: #4f70b5;
+  color: white;
+  border: 2px solid #4f70b5;
+}
+
+.or {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.question {
+  text-transform: capitalize;
+}
+
+span {
+  color: #f2796e;
+  cursor: pointer;
+}
+
+/* icon rules */
+form div i {
+  position: absolute;
+  padding: 14px;
+}
+
+.success-icon,
+.failure-icon {
+  right: 0;
+  opacity: 0;
+}
+
+.failure-icon,
+.error {
+  color: red;
+}
+
+.success-icon {
+  color: #2ecc71;
+}
+
+.error {
+  font-size: 12px;
+  position: absolute;
+  padding-top: 0.2em;
+}
+
+/* button */
+button {
+  margin: auto;
+  margin-top: 15px;
+  width: 50%;
+  position: relative;
+  height: 45px;
+  background-color: #f2796e;
+  border: 2px solid #f2796e;
+  border-radius: 1em;
+  color: #fff;
+  font-weight: bold;
+  font-family: inherit;
+  text-transform: uppercase;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.1s ease;
+}
+
+button:hover {
+  background-color: #e95043;
+  border: 2px solid #e95043;
+  transform: scale(102%);
+}
+
+/* media queries */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+
+  form,
+  .content {
+    width: 100% !important;
+  }
+
+  .btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3em;
+  }
+
+  .image {
+    height: 70vh;
+  }
+
+  .btn-1,
+  .btn-2 {
+    width: 30%;
+  }
+
+  .social {
+    text-align: center;
+  }
+
+  .form-control {
+    width: 50%;
+  }
+
+  button {
+    width: 30%;
+  }
+}
+
+@media (max-width: 650px) {
+  .btn {
+    display: block;
+    flex-direction: column;
+    width: 200%;
+    left: 6.5em;
+  }
+
+  .btn-2 {
+    margin-bottom: 5em;
+  }
+
+  .form-control {
+    width: 80%;
+  }
+
+  button {
+    width: 50%;
+  }
+}

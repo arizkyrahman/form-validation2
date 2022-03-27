@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="logo">
+          <img src="assets/fontawesome/images/logo.svg" alt="" />
+        </div>
+        <div class="image"></div>
+        <div class="text">
+          start for free & get <br />
+          attractive offers today!
+        </div>
+      </div>
+
+      <!-- form -->
+      <form id="form">
+        <div class="social">
+          <div class="title">get started</div>
+          <div class="question">
+            already have an account?<br />
+            <span>sign in</span>
+          </div>
+
+          <div class="btn">
+            <div class="btn-1">
+              <img
+                src="https://img.icons8.com/color/25/000000/google-logo.png"
+              />
+              Continue with Google
+            </div>
+            <div class="btn-2">
+              <img
+                src="https://img.icons8.com/ios-filled/25/ffffff/facebook-new.png"
+              />
+              Continue with Facebook
+            </div>
+          </div>
+
+          <div class="or">or</div>
+        </div>
+
+        <!-- username input -->
+        <div class="form-control">
+          <label for="username">username</label>
+          <i class="fas fa-user"></i>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="johndoe1"
+          />
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="far fa-circle-check success-icon"></i>
+          <div class="error"></div>
+        </div>
+
+        <!-- email input -->
+        <div class="form-control">
+          <label for="email">email</label>
+          <i class="far fa-envelope"></i>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="wodqjj4@fsdf.com"
+          />
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="far fa-circle-check success-icon"></i>
+          <div class="error"></div>
+        </div>
+
+        <!-- password input -->
+        <div class="form-control">
+          <label for="password">password</label>
+          <i class="fas fa-lock"></i>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+          />
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="far fa-circle-check success-icon"></i>
+          <div class="error"></div>
+        </div>
+
+        <!-- button -->
+        <button type="submit" id="submit">sign up</button>
+      </form>
+    </div>
+  </body>
+
+  <script
+    src="https://kit.fontawesome.com/e518a06a41.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="main.js"></script>
+</html>
